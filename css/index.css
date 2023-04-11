@@ -1,0 +1,11 @@
+body {
+	padding-top: 90px;
+	/* overflow: hidden; */
+}
+
+/* 头部 */
+.header {
+	max-width: 980px;
+	display: flex;
+	justify-content: space-between;
+}
