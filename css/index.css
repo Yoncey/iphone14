@@ -1,11 +1,194 @@
 body {
-	padding-top: 90px;
-	/* overflow: hidden; */
+  padding-top: 90px;
+  overflow: hidden;
 }
-
-/* 头部 */
 .header {
-	max-width: 980px;
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
+  color: #1d1d1f;
+}
+.header .top-title {
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 1;
+}
+.header .top-right {
+  display: flex;
+  margin-right: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  z-index: 1;
+}
+.header .top-right #color-text {
+  line-height: 30px;
+}
+.header .colors {
+  position: relative;
+  display: flex;
+  margin-left: 10px;
+}
+.header .colors .color-item {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.header .colors #midnight {
+  background-color: #31353a;
+}
+.header .colors #starlight {
+  background-color: #f0ece8;
+}
+.header .colors #red {
+  background-color: #e11c2a;
+}
+.header .colors #blue {
+  background-color: #c0cfde;
+}
+.header .colors #purple {
+  background-color: #e7d7e9;
+}
+.header .colors #yellow {
+  background-color: #f5e488;
+}
+.header .colors > label {
+  margin-left: 0.24em;
+  width: 28px;
+  height: 28px;
+  padding: 2px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.header .colors > label.active {
+  border: 2px solid #0071e3;
+}
+.header .colors .new {
+  display: none;
+  position: absolute;
+  right: 2px;
+  top: 30px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #bf4800;
+}
+.iphone {
+  position: relative;
+  width: 1144px;
+  height: 574px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: 50% 50%;
+  transition: transform 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.iphone figure {
+  opacity: 0;
+  transform-origin: 0 0;
+  position: absolute;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.iphone .midnight {
+  left: 8px;
+  top: 233px;
+  width: 532px;
+  height: 562px;
+  background-size: 532px 562px;
+  background: url("../img/hero_midnight__sg7l40u32uim_large.jpg") no-repeat;
+  mask-image: url("../img/hero_midnight_mask__bz1xq6feycr6_large.png");
+  -webkit-mask-image: url("../img/hero_midnight_mask__bz1xq6feycr6_large.png");
+  transform: scale(0.51);
+}
+.iphone .midnight.active {
+  transform: translate(-2.96816834%, -1.85471742%) scale(0.527) !important;
+}
+.iphone .starlight {
+  left: 111px;
+  top: 118px;
+  width: 518px;
+  height: 582px;
+  background-size: 518px 582px;
+  background: url("../img/hero_starlight__fnug85nckkuq_large.jpg") no-repeat;
+  mask-image: url("../img/hero_starlight_mask__d1d5xraosdci_large.png");
+  -webkit-mask-image: url("../img/hero_starlight_mask__d1d5xraosdci_large.png");
+  transform: scale(0.52);
+}
+.iphone .starlight.active {
+  transform: translate(-2.2962066%, -2.64148353%) scale(0.54) !important;
+}
+.iphone .red {
+  left: 259px;
+  top: 49px;
+  width: 450px;
+  height: 568px;
+  background-size: 450px 568px;
+  background: url("../img/hero_red__z83xubxufc2i_large.jpg") no-repeat;
+  mask-image: url("../img/hero_red_mask__00yd3q95bn6q_large.png");
+  -webkit-mask-image: url("../img/hero_red_mask__00yd3q95bn6q_large.png");
+  transform: scale(0.54);
+}
+.iphone .red.active {
+  transform: translate(-2.24975663%, -2.68115555%) scale(0.54) !important;
+}
+.iphone .blue {
+  left: 437px;
+  top: 22px;
+  width: 366px;
+  height: 578px;
+  background-size: 366px 578px;
+  background: url("../img/hero_blue__n9fnkto95n2q_large.jpg") no-repeat;
+  mask-image: url("../img/hero_blue_mask__fvfth8khup6q_large.png");
+  -webkit-mask-image: url("../img/hero_blue_mask__fvfth8khup6q_large.png");
+  transform: scale(0.573);
+}
+.iphone .blue.active {
+  transform: translate(-0.48710585%, -3.46593824%) scale(0.59) !important;
+}
+.iphone .purple {
+  left: 629px;
+  top: 18px;
+  width: 366px;
+  height: 620px;
+  background-size: 366px 620px;
+  background: url("../img/hero_purple__bs5nrbl1uw3m_large.jpg") no-repeat;
+  mask-image: url("../img/hero_purple_mask__d3s7h46n9jue_large.png");
+  -webkit-mask-image: url("../img/hero_purple_mask__d3s7h46n9jue_large.png");
+  transform: scale(0.67);
+}
+.iphone .purple.active {
+  transform: translate(-0.48710585%, -3.46593824%) scale(0.683) !important;
+}
+.iphone .yellow {
+  left: 781px;
+  top: 68px;
+  width: 428px;
+  height: 616px;
+  background-size: 428px 616px;
+  background: url("../img/hero_yellow__d3aifvttsuuu_large.jpg") no-repeat;
+  mask-image: url("../img/hero_yellow_mask__bu4n4noy3bqu_large.png");
+  -webkit-mask-image: url("../img/hero_yellow_mask__bu4n4noy3bqu_large.png");
+  transform: scale(0.86);
+}
+.iphone .yellow.active {
+  transform: translate(0.60776862%, -3.44682714%) scale(0.88) !important;
+}
+[data-active="midnight"] {
+  transform: scale(1.995) rotate(45deg) translate(120px, 210px);
+}
+[data-active="starlight"] {
+  transform: scale(2.001) rotate(37deg) translate(62px, 200px);
+}
+[data-active="red"] {
+  transform: scale(1.811) rotate(24deg) translate(-120px, 241px);
+}
+[data-active="blue"] {
+  transform: scale(1.619) rotate(10deg) translate(-302px, 173px);
+}
+[data-active="purple"] {
+  transform: scale(1.38) rotate(-9deg) translate(-462px, 95px);
+}
+[data-active="yellow"] {
+  transform: scale(1.142) rotate(-24deg) translate(-661px, -170px);
 }
